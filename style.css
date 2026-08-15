@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 8%;
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: white;
+}
+
+.to-do {
+    width: 450px;
+    padding: 30px;
+    border-radius: 18px;
+    background: #1f2937;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.to-do h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 14px;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    outline: none;
+    background: #111827;
+    color: white;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #6b7280;
+}
+
+input:focus {
+    border-color: #60a5fa;
+}
+
+.add {
+    padding: 0 18px;
+    border: none;
+    border-radius: 10px;
+    background: #3b82f6;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+}
+
+#taskList {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    list-style: none;
+    padding-right: 5px;
+}
+
+/* Scrollbar */
+#taskList::-webkit-scrollbar {
+    width: 6px;
+}
+
+#taskList::-webkit-scrollbar-thumb {
+    background: #4b5563;
+    border-radius: 10px;
+}
